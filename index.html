@@ -1436,7 +1436,7 @@
 						</button>
 					</span>	
 
-					<button data-action-type="forward" class="mainonly advanced" title="Move the user to another room, controlled by another director" onclick="directMigrate(this, event);">
+					<button data-action-type="forward" class="mainonly advanced" title="Move the user to another room, controlled by another director" onclick="directMigrate(this, event);" style="display: none;">
 						<i class="las la-paper-plane"></i>
 						<span data-translate="forward-to-room">Transfer</span>
 					</button>
@@ -1474,7 +1474,7 @@
 						<span data-translate="add-to-scene">add to scene 1</span>
 					</button>
                 </div>
-				<button class="hideDropMenu advanced" onclick="toggleByDataset('1');getById('chevarrow3').classList.toggle('bottom');getById('chevarrow3').classList.toggle('right');">
+				<button class="hideDropMenu advanced" onclick="toggleByDataset('1');getById('chevarrow3').classList.toggle('bottom');getById('chevarrow3').classList.toggle('right');" style="display: none;">
 					<i id="chevarrow3" class="chevron right" aria-hidden="true"></i>
 					<span data-translate="scene-options">Scene options</span>
 				</button>
@@ -1534,7 +1534,7 @@
                     </div>
                 </div>
 				
-				<button class="hideDropMenu advanced" onclick="toggleByDataset('2');getById('chevarrow4').classList.toggle('bottom');getById('chevarrow4').classList.toggle('right');">
+				<button class="hideDropMenu advanced" onclick="toggleByDataset('2');getById('chevarrow4').classList.toggle('bottom');getById('chevarrow4').classList.toggle('right');" style="display: none;">
 					<i id="chevarrow4" class="chevron right" aria-hidden="true"  ></i>
 					<span data-translate="additional-controls">Additional Controls</span>
 				</button>
@@ -1633,7 +1633,7 @@
 						</button>
 					</div>
 				</div>
-				<div class="row two"> 
+				<div class="row two" style="display: none;"> 
                     <!-- Further Audio/Video Settings -->
                     <div class="row two settingsWrapper" data-cluster="3">
                         <button data-action-type="advanced-audio-settings" data-active="false" title="Remote Audio Settings" onclick="requestAudioSettings(this);">
